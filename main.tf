@@ -18,9 +18,9 @@ module "tfe_vault_workspace_module" {
   vault-token = "${module.vault_namespace_module.vault-token}"
 }
 
-module "vault_namespace_module" {
-  source  = "app.terraform.io/customer-demo-yulei-management-org/vault-namespace-module/specialcustomer"
-  version = "0.0.6"
+// module "vault_namespace_module" {
+//   source  = "app.terraform.io/customer-demo-yulei-management-org/vault-namespace-module/specialcustomer"
+//   version = "0.0.6"
 
-  namespace = var.namespace-name
-}
+//   namespace = var.namespace-name
+// }
