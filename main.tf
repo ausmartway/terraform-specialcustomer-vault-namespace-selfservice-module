@@ -1,7 +1,7 @@
 
 module "github_repo_module" {
   source  = "app.terraform.io/customer-demo-yulei-management-org/github-repo-module/specialcustomer"
-  version = "0.0.3"
+  version = "0.0.4"
 
   reponame = "repositoryfor-${var.namespace-name}"
 }
