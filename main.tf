@@ -20,7 +20,7 @@ module "tfe_vault_workspace_module" {
 
 module "vault_namespace_module" {
   source  = "app.terraform.io/customer-demo-yulei-management-org/vault-namespace-module/specialcustomer"
-  version = "0.0.6"
+  version = "0.0.7"
 
   namespace = var.namespace-name
 }
