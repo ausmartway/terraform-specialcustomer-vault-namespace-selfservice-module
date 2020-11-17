@@ -16,6 +16,7 @@ module "tfe_vault_workspace_module" {
   tfe-workspace-name = "workspacefor-${module.vault_namespace_module.vault-namespace}"
   vault-namespace = "${module.vault_namespace_module.vault-namespace}"
   vault-token = "${module.vault_namespace_module.vault-token}"
+  vault-addr = var.vault-addr
 }
 
 module "vault_namespace_module" {
