@@ -11,6 +11,7 @@ module "tfe_vault_workspace_module" {
   version = "0.0.6"
 
   github-repo-fullname = "${module.github_repo_module.repoidentifier}"
+  //oauth-token-id been hardcoded to the only vcs connection.
   oauth-token-id = "ot-Xsx6ReJAouFcMzYN"
   tfe-organization = "customer-demo-yulei-consumer-org"
   tfe-workspace-name = "workspacefor-${module.vault_namespace_module.vault-namespace}"
