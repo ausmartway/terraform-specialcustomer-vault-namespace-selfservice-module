@@ -27,5 +27,7 @@ module "vault_namespace_module" {
   namespace = var.namespace-name
 }
 
-
+output "results" {
+  value = "Your Vault namespace ${var.namespace-name} has been provisioned successfully, you can now commit your terraform code for vault to repositoryfor-${var.namespace-name}.}
+}
 
