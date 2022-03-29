@@ -8,7 +8,7 @@ module "github_repo_module" {
 
 module "tfe_vault_workspace_module" {
   source  = "app.terraform.io/customer-demo-yulei-management-org/tfe-vault-workspace-module/specialcustomer"
-  version = "0.0.6"
+  version = "0.0.7"
 
   github-repo-fullname = "${module.github_repo_module.repoidentifier}"
   //oauth-token-id been hardcoded to the only vcs connection.
